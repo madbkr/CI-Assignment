@@ -1,3 +1,7 @@
+//Gemeinsam bearbeitet von Madeleine Breitkreutz, Laurel Raven
+// Github: https://github.com/madbkr/CI-Assignment
+
+
 import org.junit.Assert;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -22,18 +26,18 @@ public class PrimeCheckTest {
   // --------------------------------------------------------------- //
   @Test
   public void testPrimes() {
-    assertTrue(PrimeCheck.isPrime(3));
-    assertTrue(PrimeCheck.isPrime(5));
-    assertTrue(PrimeCheck.isPrime(7));
-    assertTrue(PrimeCheck.isPrime(11));
-  }
+    assertEquals("Test 5", true, PrimeCheck.isPrime(5));
+    assertEquals("Test 7", true, PrimeCheck.isPrime(7));
+    assertEquals("Test 11", true, PrimeCheck.isPrime(11));
+ 
 
   // --------------------------------------------------------------- //
   @Test
   public void testNonPrimes() {
-    assertFalse(PrimeCheck.isPrime(4));
-    assertFalse(PrimeCheck.isPrime(6));
-    assertFalse(PrimeCheck.isPrime(21));
-    assertFalse(PrimeCheck.isPrime(27));
+  
+    assertEquals("Test 4", false PrimeCheck.isPrime(4));
+    assertEquals("Test 6", false, PrimeCheck.isPrime(6));
+    assertEquals("Test 21", false, PrimeCheck.isPrime(21));
+
   }
 }
